@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        {include file="common/meta" /}
+
+        <body class="hold-transition login-page">
+        <div class="login-box">
+          <div class="login-logo">
+            <a href="/"><b>Jun</b>CMS</a>
+          </div>
+
+          <!-- /.login-logo -->
+          <div class="login-box-body" style="height: 250px;">
+            <p class="login-box-msg">登录</p>
+
+            
+              <div class="form-group has-feedback">
+                <input type="email" class="form-control" id="user" placeholder="账号">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+              </div>
+              <div class="form-group has-feedback">
+                <input type="password" class="form-control" id="pwd" placeholder="密码">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+              </div>
+              
+              <div class="form-group has-feedback">
+                  <input type="password" class="form-control" id="vif" placeholder="验证码" style="width: 180px;float: left;">
+                  <span class="glyphicon glyphicon-lock form-control-feedback" style="right: 140px;"></span>
+                  <img src="{:captcha_src()}" width="130" height="40" onClick="this.src='{:captcha_src()}?id='+Math.random()" style="float: right">
+              </div>
+
+              <div class="form-group has-feedback" style="float: left;width: 100%;margin-top: 5px">
+                  <button type="button" class="btn btn-primary btn-block btn-flat">登录</button>
+              </div>
+
+            
+          </div>
+          <p class="text-center"><br/>2019 - 2020 v2.soubei1123.cn</p>
+          <!-- /.login-box-body -->
+        </div>
+        <!-- /.login-box -->
+       
+        {include file="common/script" /}
+    </body>
+</html>
+<script>
+function login() {
+    var user = $('#user').val();
+    var pwd  = $('#pwd').val();
+    var vif  = $('#vif').val();
+
+    var data = {'user':user,'pwd':pwd,'vif':vif};
+    if (user == '') {
+        $.thinkmimi({Content : '请输入用户名！',Type: 2,Align: 'right',OutTime: 2000,});return false;
+    }
+    if (pwd == '') {
+        $.thinkmimi({Content : '请输入密码！',Type: 2,Align: 'right',OutTime: 2000,});return false;
+    }
+      if (vif == '') {
+        $.thinkmimi({Content : '请输入验证码！',Type: 2,Align: 'right',OutTime: 2000,});return false;
+    }
+    
+    $.ajax({
+        type: 'post',
+        data:data,
+        url: "{:url('login/index')}",
+        success: function(data) {
+          var array = eval('(' + data+ ')');
+          if (array['code'] == '01') {
+            $.thinkmimi({Content : array['msg'],Type: 2,Align: 'right',OutTime: 2000,});
+          } else {
+            $.thinkmimi({Content : array['msg'],Type: 1,Align: 'right',OutTime: 2000,});
+            setTimeout(function(){window.location.href = "{:url('index/index')}";},1500); 
+          }
+      }
+    });
+}
+$(".btn-block").on('click', function(){
+    login();
+});
+$(".login-box-body").keydown(function() {
+    if (event.keyCode == "13") {
+        $('.btn-block').click();
+    }
+});
+</script>

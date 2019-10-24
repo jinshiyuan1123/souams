@@ -1,0 +1,99 @@
+<style>
+.job{height:30px; border:1px #ccc solid;color: #fff; margin:5px; float:left; text-align:center; line-height:20px; background:#009688; position:relative; padding:5px; cursor:pointer}
+td,th{font-size:13px}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {border: 1px solid #e8e8e8;text-align: left;}
+</style>
+        
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <!-- END RIBBON -->
+        <div class="content">
+            <div class="panel panel-default panel-intro">
+                <div class="panel-heading">
+                    <div class="panel-lead">
+                        <em>
+                            服务器信息
+                        </em>
+                        ...
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="one">
+                           
+                            <div class="org-view-wrapper card table-tray">
+
+                                <div class="org-right-col tray-cell j_user">
+                                    <div class="user-sort-view j-user-list">
+                                        <div class="users-list-pinyin"></div>
+                                        <div class="user-sortbar table-tray"><div class="tray-cell" style="width: 300px"></div></div>
+                                        <div id="user-container" class="users-container">
+                                            <div class="bs-example">
+                                                <table class="table table-bordered">
+                                                    <tbody>
+                                                    <tr><th colspan="7" style="text-align: center">服务器详情</th></tr>
+                                                    <tr>
+                                                        <th>框架版本</th>
+                                                        <th colspan="6">{$data.thinkphp}</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>PHP版本</th>
+                                                        <th colspan="6">{$data.php_edition}</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Mysql版本</th>
+                                                        <th colspan="6">{$data.mysql}</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>PHP内核</th>
+                                                        <th colspan="6">{$data.php_model}</th>
+                                                    </tr>
+                            
+                                                    <tr>
+                                                        <th>本机IP</th>
+                                                        <th colspan="6">{$data.ip}</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>项目根目录</th>
+                                                        <th colspan="6">{$data.root_path}</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>服务器环境</th>
+                                                        <th colspan="6">{$data.nginx}</th>
+                                                    </tr>
+                            
+                                                    <tr>
+                                                        <th>HTTP协议类型</th>
+                                                        <th colspan="6">{$data.https}</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>磁盘使用情况</th>
+                                                        <th colspan="6">{$data.root_statr_size} ({$data.root_end_size})</th>
+                                                    </tr>
+                                                    
+                            
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            
+                            </div>
+                                    
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+
+
+
+

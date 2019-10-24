@@ -1,0 +1,270 @@
+
+<link href="__ADMIN__/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="__ADMIN__/css/page.css" rel="stylesheet" type="text/css">
+
+<style>.skin-black .sidebar a {color: #1c5672;}pre{padding: 20px}</style>
+
+<div id="j_taskcenter" class="main">
+ <div class="j_mainscroll mCus-mh100 scrollwrapper mCustomScrollbar _mCS_11 mCS_no_scrollbar">
+  <div class="mCustomScrollBox mCS-darkblue mCSB_vertical mCSB_inside" id="mCSB_11" tabindex="0">
+   <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" id="mCSB_11_container">
+    <div class="main-bd sidebar-in j_sidebarPren">
+     <div class="table-tray scrollwrapper">
+      <div class="main-content">
+
+
+<div id="main" class="fix-sidebar">
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="list">
+                <a class="become-backer">拽写人：情深不寿</a>
+                <ul class="menu-root">
+                    <li>
+                        <a class="sidebar-link current">使用说明</a>
+                        <ul class="menu-sub">
+                            <li> <a class="section-link">后台PHP用法：</a></li>
+                            <ul>
+                                <li><a class="section-link" data-scroll="" href="#jun-创建管理员">1、创建管理员</a></li>
+                                <li><a class="section-link" data-scroll="" href="#jun-模板中如何进行权限判断">2、模板中如何进行权限判断</a></li>
+                                <li><a class="section-link" data-scroll="" href="#jun-数据库管理">3、数据库管理</a></li>
+                                <li><a class="section-link" data-scroll="" href="#jun-添加操作日志记录">4、添加操作日志记录</a></li>
+                                <li><a class="section-link" data-scroll="" href="#jun-验证当前管理员地区权限">5、验证当前管理员地区权限</a></li>
+                                <li><a class="section-link" data-scroll="" href="#jun-获取当前管理员地区权限列表">6、获取当前管理员地区权限列表</a></li>
+                            </ul>
+
+                            <li> <a class="section-link">&nbsp;</a></li>
+                            <li> <a class="section-link">后台JS用法：</a></li>
+                            <ul>
+                                <li><a class="section-link" data-scroll="" href="#jun-弹窗提示">1、弹窗提示</a></li>
+                                <li><a class="section-link" data-scroll="" href="#jun-新窗口弹出页面">2、新窗口弹出页面</a></li>
+                            </ul>
+                            
+                            <li> <a class="section-link" href="#jun-更新日程">更新日程</a></li>
+                            <li> <a class="section-link" href="#jun-注意事项">注意事项</a></li>
+                            <li> <a class="section-link" href="#jun-文件以及目录说明">文件以及目录说明</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content guide with-sidebar index-guide">
+        <h1>后端 - 后台开发文档</h1>
+
+
+        <h2 id="jun-创建管理员">1、创建管理员</h2>
+        <p>A、添加对应的菜单列表</p>
+        <p>B、创建需要的部门，例如：技术部、司机部等</p>
+        <p>C、创建需要分配权限菜单的角色</p>
+        <p>D、创建需要的岗位，例如：技术部经理、实习生等，一个岗位可关联多个角色</p>
+        <p>E、创建管理员，系统最多只能同时存在3个超级管理员</p>
+
+        <h2 id="jun-模板中如何进行权限判断">2、模板中如何进行权限判断</h2>
+        <p>在模板文件中，使用下列方式即可判断权限显示对应的菜单：</p>
+        <p><code>{literal}{if condition="$adminController->vif('控制器','方法')"} {/if}{/literal}</code></p>
+
+
+        <h2 id="jun-数据库管理">3、数据库管理</h2>
+        <p>出于安全考虑，当前系统只支持<code>数据库表详情查看</code>功能</p>
+
+        <h2 id="jun-添加操作日志记录">4、添加操作日志记录</h2>
+        <p>在控制器中使用$this->addLog();添加操作日志，参数如下：</p>
+<p><pre>
+/**
+* 记录操作日志
+ * @param string $type   操作类型
+ * @param string $title  详细描述
+ * @param int    $status 操作状态 1|2|3 成功|失败|异常
+ * @param bool   $model  是否需要重定向回上一页
+ * @return 无
+*/
+public function addLog($type, $title, $status, $model=true){
+
+}
+</pre></p>
+
+
+        <h2 id="jun-验证当前管理员地区权限">5、验证当前管理员地区权限</h2>
+        <p>在控制器中使用$this->regionVif();验证地区权限，参数如下：</p>
+<p><pre>
+/**
+ * 验证是否拥有地区访问权限
+ * @param int $id 地区ID
+ * @return bool
+*/
+public function regionVif($id = ''){
+
+}
+</pre></p>
+
+
+        <h2 id="jun-获取当前管理员地区权限列表">6、获取当前管理员地区权限列表</h2>
+        <p>在控制器中使用$this->regionGet();拉取地区权限，该方法不需要传参：</p>
+<p><pre>
+/**
+ * 拉取地区访问权限
+ * @return bool|string
+*/
+public function regionGet(){
+
+}
+</pre></p>
+
+
+
+
+
+
+        <!--后台前端JS文档-->
+        <h2 id="jun-弹窗提示">1、弹窗提示</h2>
+<p><pre>
+$.thinkmimi({Content : '提示内容', Type:2, Align:'right', OutTime:2000});
+
+其中：
+Content ：提示内容
+Type    ：弹窗类型 1|2 正确|错误
+Align   ：弹窗位置 right|center 右侧|居中
+OutTime ：弹窗自动关闭秒数
+</pre></p>
+
+        <h2 id="jun-新窗口弹出页面">2、新窗口弹出页面</h2>
+<p><pre>
+JunCMS是使用的layui前端框架，
+弹出新窗口主要依赖于layui.open组件。
+在弹窗出的页面中，需要新建一个doSubimt()函数，用作返回值。
+
+例如：我们在Index.html中利用如下代码，弹出Add.html页面：
+layer.open({
+    type: 2,
+    title: '添加新管理员',
+    shadeClose: true,
+    shade: false,
+    maxmin: true,
+    area: ['100%', '100%'],
+    btn: ['确认', '取消'],
+    content: href,
+    yes: function(index, layero) {
+        var _this = layero.find('iframe')[0];
+        var bool  = _this.contentWindow.doSubimt();
+        if (bool !== false) {
+            $.thinkmimi({Content : bool['msg'],Type : 1,Align:'right',OutTime:2000,});
+            menu_run();
+            layer.closeAll();
+            window.setTimeout(function(){
+                window.location.reload();
+            }, 700);
+        }
+    },
+});
+
+那么，我们在Add.html页面中就需要新建一个doSubimt()函数，用作返回值。
+function doSubimt() {
+	var res;
+	var data = {};
+	
+	$.ajax({
+		type: 'post',
+		data: data,
+		async: false,
+		url: "{:url('add')}",
+		success: function(data) {
+			var array = eval('('+data+')');
+			res = array;
+			if (array['code'] == '01') {
+				$.thinkmimi({Content : array['msg'], Type:2, Align:'right', OutTime:2000});
+				res = false;
+			}
+		}
+	});
+
+	return res;
+}
+</pre></p>
+
+
+
+        <h2 id="jun-更新日程">更新日程</h2>
+        <p>1、2018-9-30 开发者：情深不寿</p>
+
+
+        <h2 id="jun-注意事项">注意事项</h2>
+        <p class="tip">
+            1、鉴于<code>ThinkPHP5</code>的缓存<code>runtime</code>目录需要执行创建，并给与<code>0777</code>权限，否则将报错。
+        </p>
+        <p class="tip">
+            2、鉴于<code>Linux服务器</code>的权限问题<code>/public/edit/</code>目录需要执行创建，并给与<code>0777</code>权限，否则将无法正常操作文件。
+        </p>
+        <p class="tip">
+            3、鉴于<code>Linux服务器</code>的权限问题<code>/public/txt/</code>目录需要执行创建，并给与<code>0777</code>权限，否则将无法正常操作文件。
+        </p>
+
+        <h2 id="jun-文件以及目录说明">文件以及目录说明</h2>
+<p><pre>
+WEB部署目录
+├─index.php       前端PHP入口文件
+├─admin.php       后台PHP入口文件
+├─html            前端静态文件存放目录
+├─extend          第三方接口封装目录  
+│   └─org         零散的第三方接口类文件存放目录
+│      └─Baksql.php    数据库操作类，用于后台拉取数据库表详情
+│
+├─public          静态文件存放地址
+│   ├─admin       后台静态样式文件存放目录
+│   ├─home        前端静态样式文件存放目录
+│   ├─edit        layui编辑器文件上传存放目录
+│   └─txt         文件配置文件存放目录
+│          
+└─application            后端程序应用目录
+    ├─database.php       数据库配置文件
+    ├─config.php         项目公共配置文件
+    ├─common.php         项目公共函数库
+    │  
+    ├─common             中间件存放目录
+    │    ├─controller    全站中间件存放位置
+    │    │     └─Backend.php 后台中间件
+    │    └─view          跳转模板文件
+    │  
+    ├─index              前端
+    │  ├─config.php      独立配置文件
+    │  ├─common.php      独立函数库
+    │  │
+    │  └─controller      接口控制器存放目录
+    │
+    └─admin              后台程序文件存放目录
+         ├─config.php    独立配置文件
+         ├─common.php    独立函数库
+         │  
+         ├─controller    后台控制器存放目录
+         │     ├─Actionlog.php        管理员操作日志管理
+         │     ├─Common.php           后台通用公共方法
+         │     ├─Database.php         数据库 - 服务器管理
+         │     ├─Docroot.php          文档管理
+         │     ├─Edition.php          版本管理
+         │     ├─Index.php            主页
+         │     ├─Job.php              岗位管理
+         │     ├─Login.php            登录
+         │     ├─Loginlog.php         管理登录日志管理
+         │     ├─Logtype.php          日志编码管理
+         │     ├─Manager.php          管理员管理
+         │     ├─Menu.php             权限菜单管理
+         │     ├─Notice.php           维护公告管理
+         │     ├─Region.php           地区管理
+         │     ├─Role.php             角色管理
+         │     ├─Security.php         安全管理
+         │     └─Structure.php        部门管理
+         │ 
+         └─view          后台视图文件存放目录(参考控制器命名)      
+</pre></p>
+
+    </div>
+
+</div>   
+
+
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
