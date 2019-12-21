@@ -1,0 +1,2760 @@
+---------------------------------------------------------------
+[ 2019-12-21T15:25:33+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.051513s][吞吐率：19.41req/s] [内存消耗：2,243.11kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003042s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006428s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:25:33+08:00 ] 127.0.0.1 GET /admin.php/captcha.html
+[ info ] wq.ym0527.com/admin.php/captcha.html [运行时间：0.026924s][吞吐率：37.14req/s] [内存消耗：1,167.58kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:25:42+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.114395s][吞吐率：8.74req/s] [内存消耗：2,153.77kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'hsvn',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011156s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006184s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.006185s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000626s ]
+[ error ] [2]file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+[D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\common.php:112]
+---------------------------------------------------------------
+[ 2019-12-21T15:26:13+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.037057s][吞吐率：26.99req/s] [内存消耗：1,972.45kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'hsvn',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003239s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006080s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000437s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:26:17+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.6073483973845384
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.6073483973845384 [运行时间：0.027459s][吞吐率：36.42req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:26:25+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.040050s][吞吐率：24.97req/s] [内存消耗：1,972.63kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'wifm',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002801s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005365s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000362s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:26:42+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.043788s][吞吐率：22.84req/s] [内存消耗：1,972.45kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'wifm',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002858s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005760s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.001593s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:26:46+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.9879990457959202
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.9879990457959202 [运行时间：0.028962s][吞吐率：34.53req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:26:53+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.048620s][吞吐率：20.57req/s] [内存消耗：1,984.54kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'clfk',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003762s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005268s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.005499s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000523s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:27:26+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.041671s][吞吐率：24.00req/s] [内存消耗：1,971.40kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'clfk',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002619s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006200s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:27:28+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.050871s][吞吐率：19.66req/s] [内存消耗：2,118.48kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003006s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.007871s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000291s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:27:28+08:00 ] 127.0.0.1 GET /admin.php/captcha.html
+[ info ] wq.ym0527.com/admin.php/captcha.html [运行时间：0.026610s][吞吐率：37.58req/s] [内存消耗：1,167.52kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:28:18+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.043604s][吞吐率：22.93req/s] [内存消耗：2,119.53kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002930s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006305s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:28:18+08:00 ] 127.0.0.1 GET /admin.php/captcha.html
+[ info ] wq.ym0527.com/admin.php/captcha.html [运行时间：0.027127s][吞吐率：36.86req/s] [内存消耗：1,167.71kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:28:24+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.060622s][吞吐率：16.50req/s] [内存消耗：1,984.54kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'jqv4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004037s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.007442s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.006526s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000629s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:29:10+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.616929636962505
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.616929636962505 [运行时间：0.030741s][吞吐率：32.53req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:29:16+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.6130497204153593
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.6130497204153593 [运行时间：0.031473s][吞吐率：31.77req/s] [内存消耗：1,167.67kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:29:24+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.049762s][吞吐率：20.10req/s] [内存消耗：1,984.54kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'pm3m',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002761s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006019s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.005434s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000591s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:30:26+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.8221642295110874
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.8221642295110874 [运行时间：0.023784s][吞吐率：42.05req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:30:34+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.049127s][吞吐率：20.36req/s] [内存消耗：1,982.35kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'j56v',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003367s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006832s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.006273s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000622s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:31:01+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.5422311302252454
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.5422311302252454 [运行时间：0.021311s][吞吐率：46.92req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:31:03+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.7856563389150353
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.7856563389150353 [运行时间：0.026408s][吞吐率：37.87req/s] [内存消耗：1,167.67kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:31:04+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.641588731242771
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.641588731242771 [运行时间：0.027938s][吞吐率：35.79req/s] [内存消耗：1,167.67kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:31:10+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.180052s][吞吐率：5.55req/s] [内存消耗：2,154.20kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'pltx',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059306s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006021s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.006066s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000553s ]
+[ error ] [2]file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+[D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\common.php:112]
+---------------------------------------------------------------
+[ 2019-12-21T15:31:34+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.11884495447146226
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.11884495447146226 [运行时间：0.023016s][吞吐率：43.45req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:31:35+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.4078711183477308
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.4078711183477308 [运行时间：0.024556s][吞吐率：40.72req/s] [内存消耗：1,167.67kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:31:41+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.055903s][吞吐率：17.89req/s] [内存消耗：1,982.35kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => '8bde',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003354s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006290s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.006264s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000616s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:32:05+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.7055984608473174
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.7055984608473174 [运行时间：0.029650s][吞吐率：33.73req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:32:07+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.6615453161249747
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.6615453161249747 [运行时间：0.020868s][吞吐率：47.92req/s] [内存消耗：1,167.67kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:32:13+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.119825s][吞吐率：8.35req/s] [内存消耗：1,983.45kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'uftq',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004775s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005540s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.005629s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000613s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:32:51+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.592955844732538
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.592955844732538 [运行时间：0.026267s][吞吐率：38.07req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:32:56+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.083374s][吞吐率：11.99req/s] [内存消耗：2,153.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'yivt',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003378s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006218s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.005648s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000599s ]
+[ error ] [2]file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+[D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\common.php:112]
+---------------------------------------------------------------
+[ 2019-12-21T15:33:07+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.052288s][吞吐率：19.12req/s] [内存消耗：2,118.94kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002895s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.007082s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000246s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:33:07+08:00 ] 127.0.0.1 GET /admin.php/captcha.html
+[ info ] wq.ym0527.com/admin.php/captcha.html [运行时间：0.028409s][吞吐率：35.20req/s] [内存消耗：1,167.52kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:33:17+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.100268s][吞吐率：9.97req/s] [内存消耗：1,983.75kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'fmmv',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003699s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005365s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.005820s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000597s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:33:44+08:00 ] 127.0.0.1 GET /admin.php/captcha.html?id=0.32451070408599314
+[ info ] wq.ym0527.com/admin.php/captcha.html?id=0.32451070408599314 [运行时间：0.025011s][吞吐率：39.98req/s] [内存消耗：1,167.48kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:33:51+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.100322s][吞吐率：9.97req/s] [内存消耗：1,947.28kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'n3ig',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003560s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006582s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.006154s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager_login_log` [ RunTime:0.007536s ]
+[ sql ] [ SQL ] INSERT INTO `sou_manager_login_log` (`m_id` , `l_ip` , `l_province` , `l_city` , `l_area` , `l_time`) VALUES (3 , '127.0.0.1' , 'XX' , '内网IP' , '内网IP' , 1576913630) [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:34:01+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.053777s][吞吐率：18.60req/s] [内存消耗：2,118.57kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011794s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005391s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:34:01+08:00 ] 127.0.0.1 GET /admin.php/captcha.html
+[ info ] wq.ym0527.com/admin.php/captcha.html [运行时间：0.028418s][吞吐率：35.19req/s] [内存消耗：1,167.58kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:34:12+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.087573s][吞吐率：11.42req/s] [内存消耗：2,153.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'wxpk',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003880s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006456s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.005474s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000543s ]
+[ error ] [2]file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+[D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\common.php:112]
+---------------------------------------------------------------
+[ 2019-12-21T15:34:35+08:00 ] 127.0.0.1 GET /
+[ info ] wq.ym0527.com/ [运行时间：0.027748s][吞吐率：36.04req/s] [内存消耗：1,172.66kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; thinkphp_show_page_trace=0|0; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:34:37+08:00 ] 127.0.0.1 GET /
+[ info ] wq.ym0527.com/ [运行时间：0.020258s][吞吐率：49.36req/s] [内存消耗：1,172.95kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:35:22+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.065832s][吞吐率：15.19req/s] [内存消耗：2,119.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011500s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006469s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000263s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:35:22+08:00 ] 127.0.0.1 GET /admin.php/captcha.html
+[ info ] wq.ym0527.com/admin.php/captcha.html [运行时间：0.029697s][吞吐率：33.67req/s] [内存消耗：1,167.52kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:35:29+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.154792s][吞吐率：6.46req/s] [内存消耗：2,097.63kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => '8rll',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003881s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006139s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.006561s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager_login_log` [ RunTime:0.025435s ]
+[ sql ] [ SQL ] INSERT INTO `sou_manager_login_log` (`m_id` , `l_ip` , `l_province` , `l_city` , `l_area` , `l_time`) VALUES (3 , '127.0.0.1' , 'XX' , '内网IP' , '内网IP' , 1576913729) [ RunTime:0.001149s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:35:29+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] wq.ym0527.com/admin.php/index/index.html [运行时间：0.123229s][吞吐率：8.11req/s] [内存消耗：2,403.30kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\index.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004373s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006912s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.005759s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000852s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:35:39+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] wq.ym0527.com/admin.php/index/index.html [运行时间：0.057215s][吞吐率：17.48req/s] [内存消耗：2,282.77kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\index.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003400s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006133s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.006364s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000794s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:35:39+08:00 ] 127.0.0.1 GET /admin.php/index/main.html
+[ info ] wq.ym0527.com/admin.php/index/main.html [运行时间：0.070847s][吞吐率：14.11req/s] [内存消耗：2,411.91kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\main.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004584s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.010334s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.007088s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000694s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:35:47+08:00 ] 127.0.0.1 GET /admin.php/structure/index.html
+[ info ] wq.ym0527.com/admin.php/structure/index.html [运行时间：0.067642s][吞吐率：14.78req/s] [内存消耗：2,411.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'structure',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Structure->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Structure.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\structure\index.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+  5 => 'json',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002807s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005594s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.006099s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_structure` [ RunTime:0.005306s ]
+[ sql ] [ SQL ] SELECT s_id as id,s_name as name,s_pid as pid FROM `sou_structure` [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:35:52+08:00 ] 127.0.0.1 GET /admin.php/index/main.html
+[ info ] wq.ym0527.com/admin.php/index/main.html [运行时间：0.060122s][吞吐率：16.63req/s] [内存消耗：2,231.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\main.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011525s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005737s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.005401s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000753s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:36:27+08:00 ] 127.0.0.1 GET /
+[ info ] wq.ym0527.com/ [运行时间：0.023910s][吞吐率：41.82req/s] [内存消耗：1,172.66kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:38:39+08:00 ] 127.0.0.1 GET /admin.php
+[ info ] wq.ym0527.com/admin.php [运行时间：0.058512s][吞吐率：17.09req/s] [内存消耗：2,282.55kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\index.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002818s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005513s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.005620s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000851s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:38:39+08:00 ] 127.0.0.1 GET /admin.php/index/main.html
+[ info ] wq.ym0527.com/admin.php/index/main.html [运行时间：0.062832s][吞吐率：15.92req/s] [内存消耗：2,231.31kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\main.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004502s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.007459s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.005987s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000876s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:38:44+08:00 ] 127.0.0.1 GET /admin.php/login/out.html
+[ info ] wq.ym0527.com/admin.php/login/out.html [运行时间：0.057729s][吞吐率：17.32req/s] [内存消耗：2,172.70kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'out',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->out[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003703s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006741s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.006926s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000873s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:38:44+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.039224s][吞吐率：25.49req/s] [内存消耗：1,923.82kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002957s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006291s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000474s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:39:01+08:00 ] 127.0.0.1 GET /
+[ info ] wq.ym0527.com/ [运行时间：0.032119s][吞吐率：31.13req/s] [内存消耗：1,172.66kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:39:06+08:00 ] 127.0.0.1 GET /admin.php
+[ info ] wq.ym0527.com/admin.php [运行时间：0.102571s][吞吐率：9.75req/s] [内存消耗：2,064.74kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063242s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006040s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:39:06+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.037116s][吞吐率：26.94req/s] [内存消耗：1,923.53kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002639s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.005522s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:39:30+08:00 ] 127.0.0.1 GET /admin.php
+[ info ] wq.ym0527.com/admin.php [运行时间：0.058793s][吞吐率：17.01req/s] [内存消耗：2,064.74kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003615s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.009957s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:39:30+08:00 ] 127.0.0.1 GET /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.046759s][吞吐率：21.39req/s] [内存消耗：2,118.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003742s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.006576s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:39:30+08:00 ] 127.0.0.1 GET /admin.php/captcha.html
+[ info ] wq.ym0527.com/admin.php/captcha.html [运行时间：0.027054s][吞吐率：36.96req/s] [内存消耗：1,165.03kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-21T15:39:49+08:00 ] 127.0.0.1 POST /admin.php/login/index.html
+[ info ] wq.ym0527.com/admin.php/login/index.html [运行时间：0.151739s][吞吐率：6.59req/s] [内存消耗：1,946.79kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://wq.ym0527.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => 'admin',
+  'vif' => 'evse',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003595s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.007317s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager` [ RunTime:0.007856s ]
+[ sql ] [ SQL ] SELECT `A`.*,`B`.`s_name`,`C`.`j_name` FROM `sou_manager` `A` LEFT JOIN `sou_structure` `B` ON `A`.`m_structure`=`B`.`s_id` LEFT JOIN `sou_job` `C` ON `A`.`m_job`=`C`.`j_id` WHERE  `A`.`m_user` = 'admin' LIMIT 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_manager_login_log` [ RunTime:0.011247s ]
+[ sql ] [ SQL ] INSERT INTO `sou_manager_login_log` (`m_id` , `l_ip` , `l_province` , `l_city` , `l_area` , `l_time`) VALUES (3 , '127.0.0.1' , 'XX' , '内网IP' , '内网IP' , 1576913989) [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:39:51+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] wq.ym0527.com/admin.php/index/index.html [运行时间：0.062853s][吞吐率：15.91req/s] [内存消耗：2,283.07kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\index.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003312s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.008122s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.006233s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000732s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:39:51+08:00 ] 127.0.0.1 GET /admin.php/index/main.html
+[ info ] wq.ym0527.com/admin.php/index/main.html [运行时间：0.074140s][吞吐率：13.49req/s] [内存消耗：2,231.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\main.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004153s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.008446s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.009791s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000815s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:40:43+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] wq.ym0527.com/admin.php/index/index.html [运行时间：0.064475s][吞吐率：15.51req/s] [内存消耗：2,448.52kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\index.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003719s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.007980s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.005792s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000708s ]
+---------------------------------------------------------------
+[ 2019-12-21T15:40:43+08:00 ] 127.0.0.1 GET /admin.php/index/main.html
+[ info ] wq.ym0527.com/admin.php/index/main.html [运行时间：0.071105s][吞吐率：14.06req/s] [内存消耗：2,231.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy2018\PHPTutorial\WWW\souams\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=16ecaf5c6b634-0d5a3e928d605b-73107570-100200-16ecaf5c6b739a; CNZZDATA4297110=cnzz_eid%3D326431995-1575363134-http%253A%252F%252Fwq.ym0527.com%252F%26ntime%3D1575363134; pgv_pvi=9949784064; pgv_si=s926407680; PHPSESSID=kdnpof7og2eqo1bkkqm1777lh7; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://wq.ym0527.com/admin.php/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.5155.400 QQBrowser/9.7.13161.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wq.ym0527.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\phpStudy2018\PHPTutorial\WWW\souams\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy2018\PHPTutorial\WWW\souams/application/admin\view\index\main.html [ array (
+  0 => 'admin_data',
+  1 => 'admin_menu',
+  2 => 'controller',
+  3 => 'action',
+  4 => 'adminController',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004801s ] mysql:host=127.0.0.1;port=3306;dbname=souams;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_black_ip` [ RunTime:0.009058s ]
+[ sql ] [ SQL ] SELECT `bi_ip` FROM `sou_black_ip` WHERE  `bi_status` = 1 ORDER BY `bi_time` DESC [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sou_menu` [ RunTime:0.008464s ]
+[ sql ] [ SQL ] SELECT m_id as id,m_pid as pid,`m_name`,`m_app`,`m_controller`,`m_action`,`m_icon`,`m_display` FROM `sou_menu` WHERE  (  m_status = 1 ) ORDER BY `m_id` ASC [ RunTime:0.000599s ]

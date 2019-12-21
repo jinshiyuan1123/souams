@@ -140,8 +140,8 @@ return [
 
     // 视图输出字符串内容替换,留空则会自动进行计算
     'view_replace_str' => [
-        '__ADMIN__' => dirname($_SERVER['SCRIPT_NAME']).'/public/admin',
-        'JUNCMS'    => 'JunCms内容管理系统 V1.0.1',
+        '__ADMIN__' => 'http://'.$_SERVER['SERVER_NAME'].'/public/admin',
+        'SOUCMS'    => 'SouCms内容管理系统 V1.2.1',
     ],
 
     // 默认跳转页面对应的模板文件

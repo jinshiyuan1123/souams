@@ -47,7 +47,6 @@ class Login extends Backend{
                 ->join('__JOB__ C', 'A.m_job = C.j_id','LEFT')
                 ->where('A.m_user', $user)
                 ->find();
-        
         if (!$res) $this->json('01', '用户名或密码错误');
         if (md5($pwd . $res['m_time']) != $res['m_pwd']) $this->json('01', '用户名或密码错误');
 
@@ -82,10 +81,13 @@ class Login extends Backend{
      * @return void
     */
 	private function add_login_log($id){
+
 		$request = Request::instance();
         $ip      = $request->ip();
+
         $data    = isTaobao($ip);
-		$data    = [
+
+		$datas    = [
 			'm_id'   => $id,
 			'l_ip'   => $ip,
             'l_province' => $data['region'] ?: '无',
@@ -93,6 +95,7 @@ class Login extends Backend{
             'l_area' => $data['county'] ?: '无',
 			'l_time' => time(),
 		];
-		Db::name('manager_login_log')->insert($data);
+
+		Db::name('manager_login_log')->insert($datas);
     }
 }
